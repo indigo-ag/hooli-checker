@@ -1,0 +1,12 @@
+{
+  "name": "salesforce-checker",
+  "version": "1.0.0",
+  "description": "Indigo backend interview project",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/indigo-ag/salesforce-checker.git"
+  },
+  "devDependencies": {
+    "csv-parse": "^2.5.0"
+  }
+}
