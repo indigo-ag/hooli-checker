@@ -1,11 +1,8 @@
-const fs = require('fs');
-const parse = require('csv-parse/lib/sync');
+const fs = require('fs'); // useful for navigating the file system
+const parse = require('csv-parse/lib/sync'); // needed for parsing CSV file data
 
 function linkBuyerToFacility() {
-  const samAccounts = parse(fs.readFileSync('sam-accounts.csv'), { columns: true });
-  const existingAccounts = parse(fs.readFileSync('existing-accounts.csv'), { columns: true });
-  
-  // your solution here
+  // your solution goes here
 }
 
 linkBuyerToFacility();
