@@ -58,7 +58,8 @@ After you've set up your prerequisites **fork a new branch of this repository**.
 Once you've coded up a solution, you'll want to print the output to the console which you can do with a simple Node script command:
 
 ```bash
-npm run start
+$> npm run start
+# => your solution outputted here 
 ```
 
 Finally, **submit a pull request that includes your written solution text file**. If you have any other questions, let us know and happy coding!
