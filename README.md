@@ -1,6 +1,6 @@
-# Salesforce Checker
+# Hooli Checker
 
-Welcome and thanks for stoppping by! Today we're going to be working on a real-life project that one of our developers recently encountered. Your mission, if you choose to accept it, is to **find the bad apples and get us a report ASAP**!
+Welcome and thanks for stopping by! Today we're going to be working on a real-life project that one of our developers recently encountered. Your mission, if you choose to accept it, is to **find the bad apples and get us a report ASAP**!
 
 ## Prerequisites
 
@@ -27,7 +27,7 @@ We also use a tiny package to handle CSVs which you can install with `npm instal
 
 ## Find the missing IDs
 
-A sales account manager has given you a list of accounts to give to his sales staff (`bam-accounts.csv`). In this file you will find 2 columns, the `accountSalesforceId` and the `bamUid`. The first column is the sales account represented as a Salesforce ID (Salesforce is CRM software solution our sales team uses to bucket our customers in the sales funnel process). The second column is the Buyer Account Manager's (BAM) unique ID (UID) in our database. This file is what the account manager is giving you to link all of his accounts to all of his sales people.
+A sales account manager (SAM) has given you a list of accounts to give to his sales staff (`sam-accounts.csv`). In this file you will find 2 columns, the `accountHooliId` and the `samUid`. The first column is the sales account represented as a Hooli ID (Hooli is the fictional CRM software solution our sales team uses to bucket our customers in the sales funnel process). The second column is the account manager's unique ID (UID) in our database. This file is what the account manager is giving you to link all of his accounts to all of his sales people.
 
 But there's a problem.
 
@@ -37,9 +37,9 @@ The problem is the existing accounts only tells the sales team which projects we
 
 ### A wrench in the plan
 
-There's one catch - your `salesforceId`s within `existing-accounts.csv` are actually _longer_ strings than the ones you were given! Funny enough, Salesforce actually provides a long and short ID. Think of it like commit SHAs in GitHub; you really only need the first 8 characters of a commit to make a match but the entire SHA is still outputted in the git log.
+There's one catch - your `hooliId`s within `existing-accounts.csv` are actually _longer_ strings than the ones you were given! Funny enough, Hooli actually provides a long and short ID. Think of it like commit SHAs in GitHub; you really only need the first 8 characters of a commit to make a match but the entire SHA is still outputted in the git log.
 
-So when you are comparing your existing account Salesforce IDs, those are _longer_ than the strings you were given in `bam-accounts.csv`, so it is not an exact string match comparison.
+So when you are comparing your existing account Hooli IDs, those are _longer_ than the strings you were given in `sam-accounts.csv`, so it is not an exact string match comparison.
 
 ## Results
 
@@ -47,7 +47,7 @@ You should create an output file with the **set difference** of IDs separated by
 
 You'll know you have the right answer when you have roughly 2900 lines of IDs...like I said, we have a _BIG_ discrepancy!
 
-We also require that **your solution to this problem run in less than a few seconds**. This solution should be fast. If it takes you more than a second or two, you probably need to start over. You're running against potentially millions of comparisons so there's the possibility that this could take minutes to run, and we just don't have time for that!
+We also require that **your solution to this problem run in less than a few seconds**. This solution should be fast. If it takes you more than a second or two, you probably need to start over. You're running against potentially millions of comparisons so there's the possibility that this could take minutes to run and we just don't have time for that!
 
 ## Getting started
 

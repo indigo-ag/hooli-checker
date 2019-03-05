@@ -1,10 +1,10 @@
 {
-  "name": "salesforce-checker",
+  "name": "hooli-checker",
   "version": "1.0.0",
   "description": "Indigo backend interview project",
   "repository": {
     "type": "git",
-    "url": "https://github.com/indigo-ag/salesforce-checker.git"
+    "url": "https://github.com/indigo-ag/hooli-checker.git"
   },
   "devDependencies": {
     "csv-parse": "^2.5.0"
