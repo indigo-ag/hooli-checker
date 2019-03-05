@@ -53,4 +53,12 @@ We also require that **your solution to this problem run in less than a few seco
 
 After you've set up your prerequisites **fork a new branch of this repository**. We want to make sure this branch stays clean. Afterwards, head into `index.js` to start coding up your solution. We've already `require`d all of the packages you'll need and created the template for the function we'll want you to run. It's your job to write to a new file with the missing IDs.
 
+### Running the project
+
+Once you've coded up a solution, you'll want to print the output to the console which you can do with a simple Node script command:
+
+```bash
+npm run start
+```
+
 Finally, **submit a pull request that includes your written solution text file**. If you have any other questions, let us know and happy coding!
