@@ -1,0 +1,24 @@
+# See http://help.github.com/ignore-files/ for more about ignoring files.
+
+# dependencies
+/node_modules
+
+# testing
+/coverage
+
+# production (builds start in /build and end up in /dist)
+/build
+/dist
+
+# misc
+.DS_Store
+/tmp
+
+# Dotenv local files
+.env
+.env.development
+.env.development.local
+
+# Logs
+npm-debug.log*
+*.log
