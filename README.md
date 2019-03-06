@@ -59,7 +59,7 @@ Once you've coded up a solution, you'll want to print the output to the console 
 
 ```bash
 $> npm run start
-# => your solution outputted here 
+# => your solution output here 
 ```
 
 Finally, **submit a pull request that includes your written solution text file**. If you have any other questions, let us know and happy coding!
